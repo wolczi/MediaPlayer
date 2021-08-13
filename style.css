@@ -1,0 +1,157 @@
+body {
+	background: black;
+	justify-content: center;
+}
+
+video {
+	width: 100%;
+	height: 100%;
+}
+
+.ramka-video {
+	border: 5px solid gray;
+	max-width: 800px;
+	max-height: 450px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.przyciski {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	flex-wrap: wrap;
+	background: rgba(0,0,0,0.7);
+}
+
+
+.kontrolki {
+	padding: 10px;
+	width: 100%;
+	
+}
+
+.kontrolki button {
+	background: none;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+
+.kontrolki #volumeslider {
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+.kontrolki #volumeslider:hover {
+	opacity: 1;
+}
+
+
+.wybierz button {
+	width: 150px;
+	height: 100px;
+	margin-right: 170px;
+	border-radius: 12px;
+	font-size: 24px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	background-color: gray;
+}
+
+.wybierz button:hover {
+	background-color: #fff;
+}
+
+.kontrolki #compress:before {
+	content: "\f2d0";
+	font-family: "Font Awesome\ 5 Free";
+	font-weight: 900;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	color: gray;
+	font-size: 30px;
+}
+
+.kontrolki #compress:hover:before {
+	color: #fff;
+}
+
+.kontrolki #play-pause:before {
+	content: "\f04b";
+	font-family: "Font Awesome\ 5 Free";
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	color: gray;
+	font-size: 28px;
+	font-weight: 900;
+}
+
+.kontrolki #play-pause.play:before {
+	content: "\f04b";
+}
+
+.kontrolki #play-pause.pause:before {
+	content: "\f04c";
+}
+
+.kontrolki #play-pause:hover:before {
+	color: #fff;
+}
+
+.kontrolki #volume:before {
+	content: "\f028";
+	font-family: "Font Awesome\ 5 Free";
+	font-weight: 900;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	color: gray;
+	font-size: 28px;
+}
+
+.kontrolki #volume.on:before {
+	content: "\f028";
+}
+
+.kontrolki #volume.half:before {
+	content: "\f027";
+}
+
+.kontrolki #volume.off:before {
+	content: "\f6a9";
+}
+
+.kontrolki #volume:hover:before {
+	color: #fff;
+}
+
+.fulltime-bar {
+	cursor: pointer;
+	height: 10px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(255,255,255,0.2);
+}
+
+.live-bar {
+	height: 10px;
+	width: 0px;
+	background-color: rgba(255,255,255,0.6);
+	transition: width .3s linear;
+}
+
+.fulltime-bar:hover > .live-bar {
+	background-color: rgba(255,255,255,1);
+}
+
+.fulltime-bar:hover {
+	background-color: rgba(255,255,255,0.3);
+}
+
